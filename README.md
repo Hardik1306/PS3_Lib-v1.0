@@ -7,7 +7,7 @@ This library is used to get data of PS3 from esp32 through SPI communication.
 
 Then create a new sketch and include this library then create a object of PS3 then use the library function acc to your use.
 *******************   
-**Functions** 
+## **Functions** 
 *******************
 begin(): This function will begin SPI communication.
 
