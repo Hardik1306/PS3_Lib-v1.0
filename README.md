@@ -11,7 +11,7 @@ Then create a new sketch and include this library then create a object of PS3 th
 
 begin(): This function will begin SPI communication.
 
-** Note – begin() is mandatory to call in void setup. **
+**Note – begin() is mandatory to call in void setup.**
 
 getButtonPress(BUTTON_NAME) : This function will return the state of the button whose name is passed in argument  . If button is pressed it will return 1 else 0. Data type bool.
 
@@ -24,9 +24,9 @@ printAnalogHat() : This function will serial print the value of joystick.
 
 printButton(): This function will serial print the name of button you will press.
 
-** Note – printAnalogHat() and printButton() will only  work if Serial.begin() is called in void setup. **
+**Note – printAnalogHat() and printButton() will only  work if Serial.begin() is called in void setup.**
 
-** Note – BUTTON and AXIS names are as shown in figure, names are case sensitive. **
+**Note – BUTTON and AXIS names are as shown in figure, names are case sensitive.**
 
 
 
