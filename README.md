@@ -1,7 +1,7 @@
-
+#PS3
 This library is used to get data of PS3 from esp32 through SPI communication.
 ********************
-**How To Use**
+## **How To Use**
 ********************
  Include zip file of library ,then first open esp32_SPI_PS3 from examples then install PS3 Controller library from https://github.com/jvpernis/esp32-ps3 then enter the mac address in #define macAddress “your PS3 mac address”,then upload the code to esp32.
 
