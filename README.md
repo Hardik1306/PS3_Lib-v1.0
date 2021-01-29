@@ -29,5 +29,5 @@ Then create a new sketch and include this library then create a object of PS3 th
 
 
 
-<img src="ps3-page-001.jpg">
+<img src="ps3.jpg">
 
