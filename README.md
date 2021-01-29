@@ -9,7 +9,7 @@ Then create a new sketch and include this library then create a object of PS3 th
   
 ## **Functions** 
 
-begin(): This function will begin SPI communication.**begin() is mandatory to call in void setup.**
+**begin():** This function will begin SPI communication.**begin() is mandatory to call in void setup.**
 
 getButtonPress(BUTTON_NAME) : This function will return the state of the button whose name is passed in argument  . If button is pressed it will return 1 else 0. Data type bool.
 
