@@ -1,8 +1,8 @@
 #include "PS3.h"
 #include "SPI.h"
 volatile byte index;
-    volatile byte c;
-    volatile byte buff[50];
+volatile byte c;
+volatile byte buff[50];
 void PS3::begin() 
 {
   pinMode(MISO, OUTPUT);
@@ -55,10 +55,14 @@ void PS3::printButton ()
 }
 void PS3::printAnalogHat()
 {
-  Serial.print("LX:" + buff[17]);
-  Serial.print("LY:" + buff[18]);
-  Serial.print("RX:" + buff[19]);
-  Serial.println("RY:" + buff[20]);
+  int alx = map(buff[17], 0, 254, -128, 127);
+  int aly = map(buff[18], 0, 254, -128, 127);
+  int arx = map(buff[19], 0, 254, -128, 127);
+  int ary = map(buff[20], 0, 254, -128, 127);
+  Serial.print("LX:");Serial.print(-3 < alx && alx < 3 ? 0 : alx);
+  Serial.print(" LY:");Serial.print(-3 < aly && aly < 3 ? 0 : aly);
+  Serial.print(" RX:");Serial.print(-3 < arx && arx < 3 ? 0 : arx);
+  Serial.print(" RY:");Serial.println(-3 < ary && ary < 3 ? 0 : ary);
 }
 bool PS3::getButtonPress(int x) {
   return buff[x];
@@ -91,7 +95,6 @@ bool PS3::getButtonRelease(int x) {
 }
 int PS3::getAnalogHat(int x) {
   int a = map(buff[x], 0, 254, -128, 127);
-  -3 < a && a < 3 ? 0 : a;
   return -3 < a && a < 3 ? 0 : a;
 }
 ISR(SPI_STC_vect)
