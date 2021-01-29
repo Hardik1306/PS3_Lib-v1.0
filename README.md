@@ -1,4 +1,4 @@
-#PS3
+# **PS3**
 This library is used to get data of PS3 from esp32 through SPI communication.
 ********************
 ## **How To Use**
