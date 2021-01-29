@@ -1,0 +1,51 @@
+#######################################
+# Syntax Coloring Map For PS3
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+PS3	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+getAnalogHat	KEYWORD2
+printButton	KEYWORD2
+getButtonPress	KEYWORD2
+getButtonClick	KEYWORD2
+printAnalogHat	KEYWORD2
+getButtonRelease	KEYWORD2
+
+
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+SELECT	LITERAL1
+L3	LITERAL1
+R3	LITERAL1
+START	LITERAL1
+UP	LITERAL1
+RIGHT	LITERAL1
+DOWN	LITERAL1
+LEFT	LITERAL1
+L2	LITERAL1
+R2	LITERAL1
+L1	LITERAL1
+R1	LITERAL1
+TRIANGLE	LITERAL1
+CIRCLE	LITERAL1
+CROSS	LITERAL1
+SQUARE	LITERAL1
+PS	LITERAL1
+LX	LITERAL1
+LY	LITERAL1
+RX	LITERAL1
+RY	LITERAL1
+LeftHatX	LITERAL1
+LeftHatY	LITERAL1
+RightHatX	LITERAL1
+RightHatY	LITERAL1
